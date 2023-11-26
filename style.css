@@ -1,0 +1,93 @@
+* , *::before, *::after {
+  box-sizing: border-box;
+  font-size: normal;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+body{
+  padding: 0;
+  margin: 0;
+background: linear-gradient(to right, #FF78C4, #FFC8C8);
+
+}
+
+.res{
+  border-radius: 20px 20px 0px 0px;
+  
+}
+
+.bor1{
+  border-radius: 0px 0px 0px 20px;
+  
+}
+.bor2{
+  border-radius: 0px 0px 20px 0px;
+  
+}
+.cal-grid{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px , auto) repeat(5, 100px);
+  
+}
+
+.cal-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none ;
+  background-color: rgba(255 , 255, 255, 0.75);
+  transition: all 0.25s;
+}
+
+.cal-grid > button:hover{
+  transform: translateY(-10px);
+  background-color: rgba(255 , 255, 255, 0.9);
+  border-radius: 20px 20px 20px 20px;
+  
+}.cal-grid > button:active{
+  transform: translateY(0.20pt);
+  
+}
+.span-two{
+  grid-column: span 2;
+  
+}
+
+.res{
+  grid-column: 1 / -1;
+  background-color: rgba(0 , 0, 0, 0.75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+
+}
+
+
+.res .prev{
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.res .curr{
+  color: white;
+  font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
